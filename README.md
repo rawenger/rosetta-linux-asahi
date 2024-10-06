@@ -10,8 +10,8 @@
 pkgutil --check-signature RosettaUpdateAuto.pkg
 pkgutil --expand-full RosettaUpdateAuto.pkg RosettaUpdateAuto.pkg-expanded
 cp RosettaUpdateAuto.pkg-expanded/RosettaUpdateAuto.pkg/Payload/Library/Apple/usr/libexec/oah/RosettaLinux/rosetta ./rosetta
-dd if=<(printf '\x1f\x20\x03\xd5') of='rosetta' bs=1 seek=170828 conv=notrunc
-dd if=<(printf '\x1f\x20\x03\xd5') of='rosetta' bs=1 seek=170856 conv=notrunc
+dd if=<(printf '\x1f\x20\x03\xd5') of='rosetta' bs=1 seek=180376 conv=notrunc
+dd if=<(printf '\x1f\x20\x03\xd5') of='rosetta' bs=1 seek=180404 conv=notrunc
 ```
 
 ### Rosetta also runs on other ARM64 machines after being patched, but that's not legal. Please use FEX / Box64 instead.
